@@ -1,0 +1,1 @@
+from domain.produto import Produto

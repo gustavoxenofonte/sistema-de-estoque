@@ -8,7 +8,7 @@ def criar_banco_de_dados(nome):
 
     # Tabela produtos
 
-    cursor.execute('''CREATE TABLE produtos (
+    cursor.execute('''CREATE TABLE IF NOT EXISTS produtos (
                     id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
                     nome TEXT NOT NULL,
                     preco FLOAT NOT NULL

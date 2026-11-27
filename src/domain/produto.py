@@ -47,8 +47,5 @@ class Produto:
             raise TypeError
 
     
-
-produto = Produto(id = 0, nome="Arroz", preco=20)
-produto.preco = 99299292929292929.123
-print(produto.preco)
-    
+    def retorna_atributos(self):
+        return [self.id, self.nome, self.preco]
