@@ -5,7 +5,7 @@ import sqlite3
 class CadastroProduto:
     def __init__(self, produto: Produto):
         self.produto = produto
-        self.id, self.nome, self.preco = self.produto.retorna_atributos()
+        self.nome, self.preco = self.produto.retorna_atributos()
 
     def cadastrar_produto(self):
         # lembrar de ver o nome do banco
